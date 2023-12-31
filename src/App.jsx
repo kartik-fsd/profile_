@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import "./App.css"
+import Accordion from "./Components/accordian/accordion";
 const App = () => {
+  
   return (
     <>
       <div className="video-background">
@@ -15,6 +17,7 @@ const App = () => {
           </motion.div>
         </div>
       </div>
+      <Accordion/>
     </>
   );
 };
