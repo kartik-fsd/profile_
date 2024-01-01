@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import "./App.css"
 import Accordion from "./Components/accordian/accordion";
+import List from "./Components/Transfer-List";
 const App = () => {
   
   return (
@@ -18,6 +19,7 @@ const App = () => {
         </div>
       </div>
       <Accordion/>
+      <List/>
     </>
   );
 };

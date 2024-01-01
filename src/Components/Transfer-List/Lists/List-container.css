@@ -1,0 +1,35 @@
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.List-container{
+border: 1px solid #ffffff3a;
+width :200px;
+height: 250px;
+background-color: #f1f1f1;
+}
+.list{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 2;
+}
+.List-container label{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.List-container input{
+    cursor: pointer;
+}
+
+.list :hover{
+    transform: scale(1.2);
+}
+
+.List-container li{
+    list-style-type: none;
+}
