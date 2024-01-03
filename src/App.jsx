@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 import "./App.css"
 import Accordion from "./Components/accordian/accordion";
 import List from "./Components/Transfer-List";
+import ComponentView from "../Showcase";
+import Stopwatch from "./Components/Stop-watch_Widget/stopwatch";
+
 const App = () => {
-  
   return (
     <>
       <div className="video-background">
@@ -18,8 +20,9 @@ const App = () => {
           </motion.div>
         </div>
       </div>
-      <Accordion/>
-      <List/>
+      <ComponentView Component={Accordion} title="Accordion"/>
+      <ComponentView Component={List} title="List Transfer"/>
+      <ComponentView Component={Stopwatch} title="Stopwatch" />
     </>
   );
 };

@@ -136,7 +136,6 @@ Each challenge folder contains the necessary instructions, requirements, and add
 
 1. Clone this repository.
 2. Navigate to the challenge folder you're interested in.
-3. Read the challenge details in the README file.
 4. Start coding and building the solution for the challenge!
 
 ## Contribution Guidelines

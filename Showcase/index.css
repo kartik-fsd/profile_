@@ -1,0 +1,38 @@
+/* Component Showcase Container */
+.component-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Light gray background */
+  }
+  
+  /* Individual Component Demo */
+  .component-demo {
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px;
+  }
+  
+  /* Component Container */
+  .component-container {
+    padding: 20px;
+    /* Add specific styling for your displayed component here */
+  }
+  
+  /* Heading for Component */
+  .component-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Dark text color */
+    padding: 15px 0;
+    background-color: #e0e0e0; /* Light gray background for heading */
+    border-bottom: 1px solid #ccc; /* Border for heading */
+  }
+  

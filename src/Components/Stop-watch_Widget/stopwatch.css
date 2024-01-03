@@ -1,0 +1,50 @@
+/* stopwatch.css */
+
+/* Color palette */
+:root {
+    --primary-color: #4CAF50; /* Green */
+    --secondary-color: #ff9800; /* Orange */
+    --background-color: #f4f4f4; /* Light grey */
+    --text-color: #333; /* Dark grey */
+  }
+  
+  /* Stopwatch Container */
+  .progress {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  /* Timer */
+  .timer {
+    font-size: 48px;
+    color: var(--text-color);
+    padding: 10px 0;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Buttons */
+  .watch-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .watch-btn-wrapper button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .watch-btn-wrapper button:hover {
+    background-color: var(--secondary-color);
+  }
+  
