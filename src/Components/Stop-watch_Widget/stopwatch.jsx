@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import "./stopwatch.css";
 
 export default function Stopwatch() {
-  const [time, settime] = useState(0);
+  const [time, setTimer] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const [isPaused, setIsPaused] = useState(true);
 
@@ -10,7 +10,7 @@ export default function Stopwatch() {
     let interval;
     if (isRunning && isPaused === false) {
       interval = setInterval(() => {
-        settime((prev) => prev + 1);
+        setTimer((prev) => prev + 1);
       }, 1000);
     } else {
       clearInterval(interval);
@@ -24,7 +24,7 @@ export default function Stopwatch() {
   };
 
   const reset = ()=>{
-    settime(0);
+    setTimer(0);
     setIsRunning(false);
   }
   const resume_pause = () =>{
@@ -47,7 +47,7 @@ export default function Stopwatch() {
       <div className="watch-btn-wrapper">
         <button onClick={start_stop}>{!isRunning ? "Start" : "stop"}</button>
         <button onClick={reset}>Reset</button>
-        <button onClick={resume_pause} disabled = {isRunning} >{!isPaused ? "Pause" : "Resume" }</button>
+        <button onClick={resume_pause} disabled = {isRunning === false} >{!isPaused ? "Pause" : "Resume" }</button>
       </div>
     </>
   );

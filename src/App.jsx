@@ -4,6 +4,7 @@ import Accordion from "./Components/accordian/accordion";
 import List from "./Components/Transfer-List";
 import ComponentView from "../Showcase";
 import Stopwatch from "./Components/Stop-watch_Widget/stopwatch";
+import Counter from "./Components/Counter-redo-undo/counter";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <ComponentView Component={Accordion} title="Accordion"/>
       <ComponentView Component={List} title="List Transfer"/>
       <ComponentView Component={Stopwatch} title="Stopwatch" />
+      <ComponentView Component={Counter} title="Counter" /> 
     </>
   );
 };

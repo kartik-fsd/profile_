@@ -47,4 +47,9 @@
   .watch-btn-wrapper button:hover {
     background-color: var(--secondary-color);
   }
+
+  .watch-btn-wrapper button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
   
