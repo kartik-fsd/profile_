@@ -5,6 +5,7 @@ import List from "./Components/Transfer-List";
 import ComponentView from "../Showcase";
 import Stopwatch from "./Components/Stop-watch_Widget/stopwatch";
 import Counter from "./Components/Counter-redo-undo/counter";
+import Tabs from "./Components/Tabs/tabs";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <ComponentView Component={List} title="List Transfer"/>
       <ComponentView Component={Stopwatch} title="Stopwatch" />
       <ComponentView Component={Counter} title="Counter" /> 
+      <ComponentView Component={Tabs} title="Tabs" />
     </>
   );
 };

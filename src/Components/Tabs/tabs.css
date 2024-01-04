@@ -1,0 +1,52 @@
+/* Tab Wrapper */
+.tab-wrapper {
+    width: 100vw;
+    padding: 0;
+  }
+  
+  /* Divider Style */
+  .divider {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tabs {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    max-width: 360px;
+    min-width: 90px;
+    position: relative;
+    min-height: 48px;
+    text-align: center;
+    flex-shrink: 0;
+    padding: 12px 16px;
+    overflow: hidden;
+    white-space: normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Active Tab Style */
+  .tabs.active {
+    opacity: 0.8;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+  }
+  
+  /* Content Wrapper */
+  .content-wrapper {
+    padding: 20px;
+  }
+  
+  /* Tab Content */
+  .tab-content {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
