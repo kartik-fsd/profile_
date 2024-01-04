@@ -1,0 +1,56 @@
+/* progressbar.css */
+
+/* Color Palette */
+:root {
+    --primary-color: #4caf50; /* Primary color */
+    --background-color: #f1f1f1; /* Background color */
+    --text-color: #333; /* Text color */
+  }
+  
+  /* Progress container */
+  .progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Standard progress bar */
+  .progress-standard {
+    width: 500px;
+  }
+  
+  /* Standard progress bar text */
+  .progress-standard-text {
+    color: var(--text-color);
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  /* Custom progress bar container */
+  .progress-bar {
+    width: 500px;
+    height: 50px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Fill animation */
+  .progress-bar-fill {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Custom progress bar text */
+  .progress-bar-text {
+    position: absolute;
+    z-index: 1;
+    color: var(--text-color);
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 0;
+  }
+  

@@ -7,6 +7,7 @@ import Stopwatch from "./Components/Stop-watch_Widget/stopwatch";
 import Counter from "./Components/Counter-redo-undo/counter";
 import Tabs from "./Components/Tabs/tabs";
 import TrafficLights from "./Components/Traffic-lights/TraficLight";
+import ProgressBar from "./Components/Progress-Bar/ProgressBar";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
       <ComponentView Component={Counter} title="Counter" /> 
       <ComponentView Component={Tabs} title="Tabs" />
       <ComponentView Component={TrafficLights} title="Traffic lights" />
+      <ComponentView Component={ProgressBar} title="Progress Bar" />
     </>
   );
 };
