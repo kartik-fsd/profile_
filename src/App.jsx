@@ -9,6 +9,7 @@ import Tabs from "./Components/Tabs/tabs";
 import TrafficLights from "./Components/Traffic-lights/TraficLight";
 import ProgressBar from "./Components/Progress-Bar/ProgressBar";
 import Clock from "./Components/Analouge-Clock/Analog";
+import StarRating from "./Components/Rating/Stars";
 
 const App = () => {
   return (
@@ -33,6 +34,7 @@ const App = () => {
       <ComponentView Component={TrafficLights} title="Traffic lights" />
       <ComponentView Component={ProgressBar} title="Progress Bar" />
       <ComponentView Component={Clock} title="Analog Clock"/>
+      <ComponentView Component={StarRating} title="Star Rating"/>
     </>
   );
 };

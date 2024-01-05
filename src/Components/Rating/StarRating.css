@@ -1,0 +1,20 @@
+.star-rating {
+    display: flex;
+    font-size: 36px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .star {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .filled {
+    color: #ffcc00;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  
