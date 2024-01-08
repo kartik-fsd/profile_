@@ -10,6 +10,7 @@ import TrafficLights from "./Components/Traffic-lights/TraficLight";
 import ProgressBar from "./Components/Progress-Bar/ProgressBar";
 import Clock from "./Components/Analouge-Clock/Analog";
 import StarRating from "./Components/Rating/Stars";
+import MortageCalculator from "./Components/Mortage/Calculator";
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
       <ComponentView Component={ProgressBar} title="Progress Bar" />
       <ComponentView Component={Clock} title="Analog Clock"/>
       <ComponentView Component={StarRating} title="Star Rating"/>
+      <ComponentView Component={MortageCalculator} title="Mortage Calculator" />
     </>
   );
 };
