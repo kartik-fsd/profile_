@@ -11,6 +11,7 @@ import ProgressBar from "./Components/Progress-Bar/ProgressBar";
 import Clock from "./Components/Analouge-Clock/Analog";
 import StarRating from "./Components/Rating/Stars";
 import MortageCalculator from "./Components/Mortage/Calculator";
+import Mole from "./Components/Games/Mole";
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
       <ComponentView Component={Clock} title="Analog Clock"/>
       <ComponentView Component={StarRating} title="Star Rating"/>
       <ComponentView Component={MortageCalculator} title="Mortage Calculator" />
+      <ComponentView Component={Mole} title="Mole Game" />
     </>
   );
 };
