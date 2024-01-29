@@ -20,6 +20,10 @@
   /* Component Container */
   .component-container {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     /* Add specific styling for your displayed component here */
   }
   

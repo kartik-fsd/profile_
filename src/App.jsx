@@ -12,7 +12,7 @@ import Clock from "./Components/Analouge-Clock/Analog";
 import StarRating from "./Components/Rating/Stars";
 import MortageCalculator from "./Components/Mortage/Calculator";
 import Mole from "./Components/Games/Mole";
-import UseMemo from "./Components/UseMemo/useMemo";
+import UseMemo, { UseMemoCode } from "./Components/UseMemo/useMemo";
 
 const App = () => {
   return (
@@ -40,7 +40,7 @@ const App = () => {
       <ComponentView Component={StarRating} title="Star Rating"/>
       <ComponentView Component={MortageCalculator} title="Mortage Calculator" />
       <ComponentView Component={Mole} title="Mole Game" />
-      <ComponentView Component={UseMemo} title="Use Memo" />
+      <ComponentView Component={UseMemo} code={UseMemoCode} title="Use Memo" />
     </>
   );
 };

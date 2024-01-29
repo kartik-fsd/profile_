@@ -1,0 +1,88 @@
+/* CodeBlock.css */
+.code-block-container {
+  background-color: #2e2e2e; /* Dark gray background */
+  border: 1px solid #1c1c1c; /* Border color */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 24px; /* Spacing between code blocks */
+  font-family: 'Arial', sans-serif; /* Match font family */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  overflow-x: auto; /* Enable horizontal scrolling for long lines */
+  max-height: 500px; /* Set a fixed height with scrolling */
+  scroll-behavior: smooth;
+  width: fit-content;
+}
+
+.code-block-container::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+.code-block-container::-webkit-scrollbar-track {
+  background-color: #2e2e2e; /* Track color */
+}
+
+.code-block-container::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a; /* Thumb color */
+  border-radius: 6px; /* Rounded corners for the thumb */
+  border: 3px solid #2e2e2e; /* Border color for the thumb */
+}
+
+.code-block-container::-webkit-scrollbar-thumb:hover {
+  background-color: #666; /* Hover state color for the thumb */
+}
+
+.code-block {
+  position: relative;
+}
+
+.code-block pre {
+  margin: 0; /* Remove default pre margin */
+}
+
+.code-block pre code {
+  display: block; /* Ensure proper code block formatting */
+  padding: 16px; /* Add padding for code */
+  white-space: pre-wrap; /* Preserve formatting and allow line wrapping */
+  color: #d4d4d4; /* Text color */
+}
+
+.line-numbers {
+  position: relative;
+}
+
+.line-numbers::before {
+  content: '';
+  counter-reset: line;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px; /* Adjust as needed */
+  padding-right: 1em; /* Add space between line numbers and code */
+  text-align: right;
+  user-select: none;
+}
+
+.line-numbers code::before {
+  counter-increment: line;
+  content: counter(line);
+  display: block;
+  color: #6c757d; /* Line number color */
+  font-size: 0.85em; /* Adjust font size as needed */
+  line-height: 1.5em; /* Adjust line height as needed */
+}
+
+.copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: #007acc; /* Copy button background color */
+  color: #fff; /* Copy button text color */
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.85em; /* Adjust font size as needed */
+}
+
+.copy-button:hover {
+  background-color: #00568c; /* Hover state background color */
+}
